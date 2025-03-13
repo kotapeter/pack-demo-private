@@ -1,1 +1,1 @@
-console.log('Here we can run DB migrationws22')
+console.log('Here we can run DB migrationws212')
