@@ -1,1 +1,1 @@
-console.log('Here we can run DB migrations')
+console.log('Here we can run DB migrations2')
