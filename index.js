@@ -1,5 +1,5 @@
 const express = require('express')
-console.log(1)
+
 const server = express()
 
 server.get('/', (req, res) => {
