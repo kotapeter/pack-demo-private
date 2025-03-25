@@ -4,7 +4,7 @@ const server = express()
 
 server.get('/', (req, res) => {
   console.log('RUNTIME_ENV', process.env.RUNTIME)
-  res.send('1 Hello Kinsta 2222222')
+  res.send('1 Hello Kinsta 123')
 })
 const port = process.env.PORT || 8080
 server.listen(port, () => {
