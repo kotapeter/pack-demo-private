@@ -1,7 +1,3 @@
-FROM node:20-alpine
+FROM kotapeter/pack-demo
 
-WORKDIR /usr/src/app
-COPY . .
-RUN npm install
-
-CMD ["node", "index2.js"]
+CMD ["node", "index.js"]
