@@ -1,3 +1,3 @@
-FROM kotapeter/pack-demo
+FROM kotapeter/pack-demo:v3
 
 CMD ["node", "index.js"]
