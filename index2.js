@@ -10,6 +10,14 @@ server.get('/t', (req, res) => {
   console.log('timeout asd')
 })
 const port = process.env.PORT || 8080
-server.listen(port, () => {
+const ser = server.listen(port, () => {
   console.log(`Example app 2 YO listening at http://localhost:${port}`)
+})
+
+process.on('SIGTERM', () => {
+  debug('SIGTERM signal received: closing HTTP server')
+  ser.close(() => {
+    debug('HTTP server closed')
+    process.exit(0)
+  })
 })
